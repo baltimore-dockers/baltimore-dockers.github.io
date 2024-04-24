@@ -45,8 +45,8 @@ defaults:
     path: ''
     type: games
   values:
-    name:
-    start at:
+    name: 
+    start at: 
     is away game: false
     location name: Herring Run Park
     street address: 2254 Chesterfield Ave. Baltimore, MD 21213
