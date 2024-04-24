@@ -1,6 +1,8 @@
 ---
+title: Andrew
+position: 0
 short_name: Andrew
 name: Andrew Rivera
-position: Co-Chief Editor
 ---
+
 Andrew loves peaches.

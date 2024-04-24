@@ -1,27 +1,35 @@
+---
+title: Your awesome title
+timezone: UTC
 collections:
   authors:
+    title: Authors
     output: true
   games:
+    title: Games
     output: false
-
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
 defaults:
-  - scope:
-      path: ""
-      type: "authors"
-    values:
-      layout: "author"
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-  - scope:
-      path: ""
-    values:
-      layout: "default"
-  
-
+- scope:
+    path: ''
+    type: authors
+  values:
+    layout: author
+- scope:
+    path: ''
+    type: posts
+  values:
+    layout: post
+- scope:
+    path: ''
+  values:
+    layout: default
 plugins:
-  - jekyll-feed
-  - jekyll-sitemap
-  - jekyll-seo-tag
+- jekyll-feed
+- jekyll-sitemap
+- jekyll-seo-tag
