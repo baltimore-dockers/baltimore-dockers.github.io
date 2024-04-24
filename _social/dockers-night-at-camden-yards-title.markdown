@@ -1,7 +1,6 @@
 ---
 title: Dockers Night at Camden Yards (title)
 date: 2024-04-24 01:12:00 Z
-event name: event name
 starts at: 2024-05-18 19:00:00 Z
 location name: Camden Yards
 street address: 333 W Camden St. Baltimore MD
