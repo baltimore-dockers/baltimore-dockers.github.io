@@ -1,0 +1,13 @@
+---
+title: Games
+---
+<h1> Game Schedule</h1>
+
+<h2>2024</h2>
+  {% for game in site.games %}
+    <div future-date="{{ game.date | date: '%Y-%m-%d' }}">
+
+      <h3 >{{game.date | date: "%b %d"}}</h3>
+      <h3> {{ game.name}}</h3>
+    </div>
+  {% endfor %}
