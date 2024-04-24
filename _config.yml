@@ -19,20 +19,35 @@ collections:
     title: Uploads
     output: true
 defaults:
-- scope:
+- 
+  scope:
     path: ''
     type: authors
   values:
     layout: author
-- scope:
+- 
+  scope:
     path: ''
     type: posts
   values:
     layout: post
-- scope:
+- 
+  scope:
     path: ''
   values:
     layout: default
+-
+  scope:
+    path: ""
+    type: games
+  values:
+    event name:
+    starts at: 
+    location name:
+    street address:
+    cost:
+
+    
 plugins:
 - jekyll-feed
 - jekyll-sitemap
