@@ -12,7 +12,7 @@ collections:
     title: Posts
     output: true
   social:
-    title: Social
+    title: Social Events
     output: true
     date: date
   uploads:
