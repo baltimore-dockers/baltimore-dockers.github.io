@@ -2,9 +2,6 @@
 title: Baltimore Dockers 
 timezone: EST
 collections:
-  authors:
-    title: Authors
-    output: true
   faqs:
     title: FAQs
     output: true
