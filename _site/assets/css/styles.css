@@ -1,5 +1,48 @@
+header .logo-title {
+  display: flex;
+}
+header .logo-title .logo {
+  margin-right: 1vw;
+}
+
+img {
+  width: auto;
+  max-height: 100%;
+}
+
+h1 {
+  font-family: "Arial Black", sans-serif;
+}
+
+.page-title {
+  font-size: 5vw;
+  margin-top: 0vw;
+  margin-bottom: 0vw;
+}
+
+nav a {
+  font-family: Verdana, sans-serif;
+  color: black;
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  margin-bottom: 1.4vw;
+}
+.container div {
+  margin: 0vw 0.5vw 0vw 0vw;
+}
+
 .current {
-  color: green;
+  color: rgb(255, 123, 0);
+  font-weight: bold;
+}
+
+div.current {
+  border-bottom: solid rgb(255, 123, 0);
 }
 
 /*# sourceMappingURL=styles.css.map */
