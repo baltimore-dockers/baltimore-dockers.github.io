@@ -1,9 +1,45 @@
+// variables
+$white: rgb(255, 255, 255);
+$orange: rgb(255, 123, 0);
+$black: rgba(0, 0, 0);
+$trans-black: rgba(0, 0, 0, 0.774);
+$light-grey: rgb(224, 224, 224);
+$dark-grey: rgb(70, 70, 70);
+
+//default css
+* {
+    font-family: "Open Sans";
+
+}
+
+//header.html css
 header {
-    .logo-title{
+    padding: 1rem;
+    background-color: $white;
+
+    .logo-title-container{
         display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
 
         .logo {
             margin-right: 1vw;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: flex-end;
+            column-gap: 1.5rem;
+            
+            div {
+                &.current{
+                    border-bottom: solid $orange;
+                }
+                &:not(.current){
+                    border-bottom: solid $white;
+                }
+            }
         }
     } 
 }
@@ -28,17 +64,8 @@ nav {
         font-family: Verdana, sans-serif;
         color: black;
         text-decoration: none;
-    }
-}
-
-.container {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: flex-end;
-    margin-bottom: 1.4vw;
-
-    div{
-        margin: 0vw .5vw 0vw 0vw;
+        font-size: 1.5rem;
+        font-weight: bold;
     }
 }
 
@@ -47,10 +74,55 @@ nav {
     font-weight: bold;
 }
 
-div {
-    &.current{
-        border-bottom: solid rgb(255, 123, 0);
-    }  
+//contact html
+.contact-container {
+    $width: 700px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .contact-instructions {
+        text-align: center;
+        width: $width;
+        color: $orange;
+    }
+
+    .contact-form {
+        width: $width;
+
+        fieldset {
+            display: flex;
+            flex-direction: column;
+            padding: .5rem;
+            border-width: 0;
+        }
+
+        input {
+           margin: .5rem; 
+           padding: .5rem;
+           background-color: $light-grey;
+           border-style: solid;
+           border-width: 1px;
+
+           &.submit {
+            background-color: $black;
+            color: $white;
+            font-weight: bold;
+            border-radius: 3px;
+            font-size: 1rem;
+            margin-left: 1.1rem;
+           }
+        }
+
+        textarea {
+            margin: .5rem; 
+            padding: .5rem;
+            background-color: $light-grey;
+            color: $dark-grey;
+        }
+
+    }
 }
 
 
@@ -58,5 +130,10 @@ div {
 @font-face {
     font-family: "Arial Black";
     src: url("../fonts/arial_black.ttf");
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("../fonts/OpenSans-VariableFont_wdth,wght.ttf");
 }
 
