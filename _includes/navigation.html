@@ -1,23 +1,11 @@
-<nav class="container">
-    <!-- <label class="hamburger-menu">
-        <input type="checkbox" />
-    </label>
-    <aside class="sidebar">
-        <nav>
-            {% for item in site.data.navigation %}
-            <div>{{ item.name }}</div>
-            {% endfor %}
-        </nav>
-
-    </aside> -->
+<nav class="nav-container">
     {% for item in site.data.navigation %}
         <div 
-            {% if page.url == item.link %}class="page-nav current"{% endif %}
-            {% if page.url != item.link %}class="page-nav"{% endif %}
+            {% if page.url == item.link %}class="current"{% endif %}
         >
             <a href="{{item.link}}" {% if page.url == item.link %}class="current"{% endif %}>
                 {{ item.name }}
             </a>
         </div> 
     {% endfor %}
-</nav>
+    </nav>

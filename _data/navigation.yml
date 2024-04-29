@@ -1,13 +1,13 @@
-- name: Home
+- name: NEWS
   link: /
 
-- name: Blog
-  link: /blog.html
-- name: Games
+- name: GAMES
   link: /games.html
-- name: Social
+- name: SOCIAL
   link: /social.html
-- name: Contact
+- name: FAQ'S
+  link: /social.html
+- name: CONTACT
   link: /contact.html
 
 # Todo! Add these pages later
