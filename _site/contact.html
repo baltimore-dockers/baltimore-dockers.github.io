@@ -21,102 +21,83 @@
 
   </head>
   <header>
-    <div class="logo-title"> 
+    <div class="logo-title-container"> 
         <div class="logo">
             <img src="/assets/images/transparent-old-logo-100x100.png"> 
         </div> 
-        <div class="title">
+        <!-- <div class="title">
             <h1 class="page-title">
                 BALTIMORE DOCKERS
             </h1>
-        </div>  
-    </div>
-    <div class="container">
-        <nav class="container">
-    <!-- <label class="hamburger-menu">
-        <input type="checkbox" />
-    </label>
-    <aside class="sidebar">
-        <nav>
-            
-            <div>Home</div>
-            
-            <div>Blog</div>
-            
-            <div>Games</div>
-            
-            <div>Social</div>
-            
-            <div>Contact</div>
-            
-        </nav>
-
-    </aside> -->
+        </div>   -->
+        <nav class="nav-container">
     
         <div 
             
-            class="page-nav"
         >
             <a href="/" >
-                Home
+                NEWS
             </a>
         </div> 
     
         <div 
             
-            class="page-nav"
-        >
-            <a href="/blog.html" >
-                Blog
-            </a>
-        </div> 
-    
-        <div 
-            
-            class="page-nav"
         >
             <a href="/games.html" >
-                Games
+                GAMES
             </a>
         </div> 
     
         <div 
             
-            class="page-nav"
         >
             <a href="/social.html" >
-                Social
+                SOCIAL
             </a>
         </div> 
     
         <div 
-            class="page-nav current"
             
         >
-            <a href="/contact.html" class="current">
-                Contact
+            <a href="/social.html" >
+                FAQ'S
             </a>
         </div> 
     
-</nav>
+        <div 
+            class="current"
+        >
+            <a href="/contact.html" class="current">
+                CONTACT
+            </a>
+        </div> 
+    
+    </nav>
     </div>
 </header>
   <body>
 
     
     <h1>CONTACT US</h1>
-<form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xdoqyyqe" method="post">
+<div class="contact-container">
+  <div class="contact-instructions">
+    <H1>
+      HAVE A QUESTION?<BR>
+      FILL OUT THE CONTACT FORM AND WE WILL REACH OUT!  
+    </H1>
+  </div>
+  <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xdoqyyqe" method="post" class="contact-form">
     <fieldset id="fs-frm-inputs">
-      <label for="full-name">Full Name</label>
-      <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
-      <label for="email-address">Email Address</label>
-      <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
-      <label for="message">Message</label>
-      <textarea rows="5" name="message" id="message" placeholder="Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla nullam quis risus." required=""></textarea>
+      <input type="text" name="name" id="full-name" placeholder="First and Last Name" required="">
+      <input type="email" name="_replyto" id="email-address" placeholder="Email" required="">
+      <textarea rows="5" name="message" id="message" placeholder="Message" required=""></textarea>
       <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
     </fieldset>
-    <input type="submit" value="Submit">
-</form>
+    <input type="submit" value="Submit" class="submit">
+  </form>
+  </div>
+</div>
+
     <script>
     function getCompareDate() {
         var d = new Date(),
