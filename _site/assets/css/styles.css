@@ -33,7 +33,7 @@ img {
 }
 
 h1 {
-  font-family: "Arial Black", sans-serif;
+  font-family: "Bebas Neue", display;
 }
 
 .page-title {
@@ -53,6 +53,24 @@ nav a {
 .current {
   color: rgb(255, 123, 0);
   font-weight: bold;
+}
+
+.games-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.games-container .game {
+  display: grid;
+  grid-template-columns: 10rem 25rem 10rem 15rem 13rem;
+  margin: 2rem;
+  height: 8rem;
+  background-color: rgb(255, 123, 0);
+}
+.games-container .game div {
+  display: flex;
+  align-items: center;
+  color: rgb(255, 255, 255);
 }
 
 .contact-container {
