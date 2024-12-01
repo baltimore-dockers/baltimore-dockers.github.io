@@ -1,0 +1,27 @@
+---
+title: FREQUENTLY ASKED QUESTIONS
+---
+
+<h1>FREQUENTLY ASKED QUESTIONS</h1>
+<div class="games-container">
+  {% for game in site.games %}
+    <div class="game" future-date="{{ game.date | date: '%Y-%m-%d' }}">
+      <div>
+        <h3>{{game.date | date: "%b %d"}}</h3>
+      </div>
+      <div>
+        <h3> {{game.name}}</h3>
+      </div>
+      <div>
+        <h3> {{game['start at'] | date: '%H:%M %p' }}</h3>
+      </div>
+      <div>
+        <h3> {{game['location name']}}</h3>
+      </div>
+      <div>
+        <h3> {{game['street address']}}</h3>
+      </div>
+    </div>
+
+  {% endfor %}
+</div>
