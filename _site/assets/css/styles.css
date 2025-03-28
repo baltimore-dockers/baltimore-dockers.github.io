@@ -126,6 +126,20 @@ nav a {
   background-repeat: no-repeat;
 }
 
+.news-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.news-container div {
+  flex: 1;
+  margin: 5px;
+  padding: 10px;
+  background-color: rgb(255, 123, 0);
+  border: 1px solid #fff;
+  height: 10em;
+}
+
 @font-face {
   font-family: "Arial Black";
   src: url("../fonts/arial_black.ttf");

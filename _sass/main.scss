@@ -162,6 +162,21 @@ nav {
     background-repeat: no-repeat;
 }
 
+.news-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  
+    div {
+      flex: 1;
+      margin: 5px;
+      padding: 10px;
+      background-color: $orange;
+      border: 1px solid #fff;
+      height: 10em;
+    }
+  }
+
 
 
 //fonts
