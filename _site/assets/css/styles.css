@@ -130,14 +130,31 @@ nav a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin: 2em 6em;
 }
 .news-container div {
   flex: 1;
-  margin: 5px;
+  margin: 20px;
   padding: 10px;
   background-color: rgb(255, 123, 0);
   border: 1px solid #fff;
-  height: 10em;
+  box-shadow: 0px 6px 0px 10px rgba(0, 0, 0, 0.774);
+  border-radius: 11px 11px 11px 11px;
+  aspect-ratio: 1/1;
+  color: white;
+  /*Important:*/
+  position: relative;
+}
+.link-spanner {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  /* edit: fixes overlap error in IE7/8, 
+     make sure you have an empty gif 
+  background-image: url('empty.gif');*/
 }
 
 @font-face {
@@ -147,6 +164,10 @@ nav a {
 @font-face {
   font-family: "Open Sans";
   src: url("../fonts/OpenSans-VariableFont_wdth,wght.ttf");
+}
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("../fonts/BebasNeue-Regular.ttf");
 }
 
 /*# sourceMappingURL=styles.css.map */
