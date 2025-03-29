@@ -157,10 +157,29 @@ nav {
     max-width: 100%;
     margin-left: auto !important;
     margin-right: auto !important;
-    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, $orange 90%), url("../images/2024-nationals-team-photo.JPG");
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, $orange 110%), url("../images/2024-nationals-team-photo.JPG");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    div {
+        text-align: center;
+    }
+
+    .team-name {
+        font-family: "Bebas Neue", Verdana, sans-serif;
+        color: $white;
+        font-size: 10em;
+    }
+
+    .tag-line {
+        font-family: "Bebas Neue", Verdana, sans-serif;
+        color: $white;
+        font-size: 5em;
+    }
 }
 
 .news-container{
@@ -184,7 +203,9 @@ nav {
 
 
       h1 {
-
+        font-family: "Permanent Marker";
+        color: $white;
+        font-size: 10em;
       }
     }
 }
@@ -217,4 +238,14 @@ nav {
 @font-face {
     font-family: "Bebas Neue";
     src: url("../fonts/BebasNeue-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Permanent Marker";
+    src: url("../fonts/PermanentMarker-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Knewave";
+    src: url("../fonts/Knewave-Regular.ttf");
 }
