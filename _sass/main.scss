@@ -18,6 +18,9 @@ $dark-grey: rgb(70, 70, 70);
 header {
     padding: 1rem 1rem 0rem;
     background-color: $black;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 
     .logo-title-container{
         display: flex;
@@ -164,21 +167,27 @@ nav {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    position: relative;
 
     div {
         text-align: center;
+
     }
 
     .team-name {
         font-family: "Bebas Neue", Verdana, sans-serif;
         color: $white;
         font-size: 10em;
+        text-align: center;
+        transform: translateY(3rem);
     }
 
     .tag-line {
-        font-family: "Bebas Neue", Verdana, sans-serif;
-        color: $white;
-        font-size: 5em;
+        font-family: "Permanent Marker", Verdana, sans-serif;
+        color: $trans-black;
+        font-size: 3em;
+        left: center;
+
     }
 }
 
@@ -203,9 +212,10 @@ nav {
 
 
       h1 {
-        font-family: "Permanent Marker";
+        
         color: $white;
-        font-size: 10em;
+        font-size: 3em;
+        text-align: center;
       }
     }
 }
