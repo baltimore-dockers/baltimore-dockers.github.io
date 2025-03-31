@@ -2,12 +2,18 @@
   font-family: "Open Sans";
 }
 
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
 header {
   padding: 1rem 1rem 0rem;
   background-color: rgb(0, 0, 0);
   position: sticky;
   top: 0;
   z-index: 1;
+  width: auto;
 }
 header .logo-title-container {
   display: flex;
@@ -16,6 +22,17 @@ header .logo-title-container {
 }
 header .logo-title-container .logo {
   margin-right: 1em;
+}
+header .logo-title-container nav a {
+  font-family: "Bebas Neue", Verdana, sans-serif;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 4vw;
+  font-weight: bold;
+}
+header .logo-title-container .current {
+  color: rgb(255, 123, 0);
+  font-weight: bold;
 }
 header .logo-title-container .nav-container {
   display: flex;
@@ -29,11 +46,6 @@ header .logo-title-container .nav-container div.current {
 }
 header .logo-title-container .nav-container div:not(.current) {
   border-bottom: solid rgb(255, 255, 255);
-}
-
-img {
-  width: auto;
-  max-height: 100%;
 }
 
 h1 {
@@ -61,7 +73,7 @@ nav a {
   font-family: "Bebas Neue", Verdana, sans-serif;
   color: rgb(255, 255, 255);
   text-decoration: none;
-  font-size: 4rem;
+  font-size: 4vw;
   font-weight: bold;
 }
 
@@ -84,7 +96,7 @@ nav a {
   grid-template-columns: 10rem 25rem 10rem 15rem 13rem;
   margin: 2rem;
   padding: 0 2rem;
-  height: 8rem;
+  height: auto;
   border-radius: 11px 11px 11px 11px;
   box-shadow: 0px 6px 0px 10px rgba(0, 0, 0, 0.774);
   background-color: rgb(255, 123, 0);
