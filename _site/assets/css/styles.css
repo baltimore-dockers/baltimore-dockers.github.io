@@ -68,6 +68,8 @@ nav a {
   display: grid;
   grid-template-columns: 10rem 25rem 10rem 15rem 13rem;
   margin: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
   height: 8rem;
   background-color: rgb(255, 123, 0);
 }
