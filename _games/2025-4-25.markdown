@@ -1,0 +1,11 @@
+---
+title: 2025 04 05
+date: 2025-03-30 19:52:00 -05:00
+position: 4
+name: Mid Atlantic Cup
+start at: 2025-04-05 10:00:00 -05:00
+is away game: true
+location name: King Family Vineyards
+street address: 6550 Roseland Farm, Crozet, VA 22932
+---
+

@@ -1,0 +1,10 @@
+---
+title: 2025 09 27
+date: 2025-03-30 20:22:00 -05:00
+name: Columbus Cats
+start at: 2025-09-27 12:00:00 -05:00
+is away game: true
+location name: Columbus, OH
+street address: TBD
+---
+

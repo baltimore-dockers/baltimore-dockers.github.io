@@ -1,0 +1,10 @@
+---
+title: 2025 10 17
+date: 2025-03-30 20:23:00 -05:00
+name: Nationals
+start at: 2025-10-17 17:00:00 -05:00
+is away game: true
+location name: Kino Sports Complex South
+street address: 2343 Tournament Way. Tucson, AZ 85714
+---
+
