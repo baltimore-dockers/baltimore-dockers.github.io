@@ -2,34 +2,14 @@
 title: Games
 ---
 
-  <h1> 2024 GAME SCHEDULE</h1>
-  <h2>Upcoming Games</h2>
+  <div class="page-title">
+    <h1>2024 GAME SCHEDULE</h1>
+  </div>
+  
+  <!-- <h2>Upcoming Games</h2> -->
   <div class="games-container">
     {% for game in site.games %}
       <div class="game" future-date="{{ game.date | date: '%Y-%m-%d' }}">
-        <div>
-          <h3>{{game.date | date: "%b %d"}}</h3>
-        </div>
-        <div>
-          <h3> {{game.name}}</h3>
-        </div>
-        <div>
-          <h3> {{game['start at'] | date: '%H:%M %p' }}</h3>
-        </div>
-        <div>
-          <h3> {{game['location name']}}</h3>
-        </div>
-        <div>
-          <h3> {{game['street address']}}</h3>
-        </div>
-      </div>
-
-    {% endfor %}
-  </div>
-  <h2>Past Games</h2>
-  <div class="games-container">
-    {% for game in site.games %}
-      <div class="game" past-date="{{ game.date | date: '%Y-%m-%d' }}">
         <div>
           <h3>{{game.date | date: "%b %d"}}</h3>
         </div>
@@ -49,3 +29,28 @@ title: Games
 
     {% endfor %}
   </div>
+  <!-- TODO: uncomment this after the first game, figure out the logic later -->
+  <!-- <h2>Past Games</h2> -->
+  <!-- <div class="games-container">
+    {% for game in site.games %}
+      {% if game.published %}
+      <div class="game" past-date="{{ game.date | date: '%Y-%m-%d' }}">
+        <div>
+          <h3>{{game.date | date: "%b %d"}}</h3>
+        </div>
+        <div>
+          <h3 class="name"> {{game.name}}</h3>
+        </div>
+        <div>
+          <h3> {{game['start at'] | date: '%H:%M %p' }}</h3>
+        </div>
+        <div>
+          <h3> {{game['location name']}}</h3>
+        </div>
+        <div>
+          <h3> {{game['street address']}}</h3>
+        </div>
+      </div>
+      {% endif %}
+    {% endfor %}
+  </div> -->

@@ -9,8 +9,14 @@ title: News
 
 <div class="news-container">
     {% for post in site.posts %}
-      <div class="news-item">
+    {% assign bg_url = post['grid photo'] | slice: 9, post['grid photo'].size %}
+      <div 
+        class="news-item" 
+        style="background-image: url("uploads/2025-schedule.jpg"); 
+        background-size: contain;"
+      >
         <h1>{{ post.title }}</h1>
+        <p>{{bg_url}}</p>
         <a href="{{ post.url }}">
             <span class="link-spanner"></span>
         </a>
