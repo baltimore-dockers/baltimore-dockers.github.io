@@ -1,7 +1,6 @@
 ---
 title: 2025 04 25
 date: 2025-03-30 19:52:00 -05:00
-published: false
 position: 0
 name: Mid Atlantic Cup
 start at: 2025-04-05 10:00:00 -05:00
