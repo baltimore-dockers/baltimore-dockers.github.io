@@ -74,7 +74,7 @@ header {
 
 h1 {
     font-family: 'Bebas Neue', display;
-    font-size: 5rem;
+    font-size: 6vw;
     margin: 2rem 0 0 0;
 }
 
@@ -139,6 +139,64 @@ nav {
             }
         }
         
+    }
+}
+@media screen and (max-width: 850px) {
+
+    h1{
+        font-size: 12vw;
+    }
+    
+    .header, .games-container {
+        width: 100%;
+    }
+    .games-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        h1 {
+            font-size: 5vw;
+            margin: 2rem 0 0 0;
+            text-align: center;
+        }
+    
+        .game {
+            width: 75%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            margin: 2rem;
+            padding: 0 2rem;
+            height: auto;
+            border-radius: 11px 11px 11px 11px;
+            box-shadow: 0px 6px 0px 10px $trans-black;
+            background-color: $orange;
+
+            .game-date {
+                font-size: 6vw;
+            }
+    
+            .game-address, .game-location-name, .game-time {
+                font-size: 4vw;
+                color: $black;
+            }
+            div {
+                display: flex;
+                align-items: center;
+                color: $white;
+                
+                h3 {
+                    margin: 0 0 0 0;
+                }
+
+                .name {
+                    font-size: 8vw;
+                }
+            }
+            
+        }
     }
 }
 
@@ -272,6 +330,7 @@ nav {
        make sure you have an empty gif 
     background-image: url('empty.gif');*/
 }
+
 
 
 //fonts
