@@ -1,5 +1,5 @@
 ---
-title: 2026 08 29
+title: 2026 08 29 - Boston Away
 date: 2026-03-23 18:51:00 -05:00
 name: Boston
 start at: 2026-08-29 12:00:00 -05:00
