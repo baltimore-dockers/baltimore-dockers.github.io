@@ -1,7 +1,8 @@
 ---
-title: 2026 08 12
+title: 2026 08 12 - VA away
 date: 2026-03-23 18:52:00 -05:00
 name: Virginia
+start at: 2026-09-12 10:00:00 -05:00
 is away game: true
 location name: King Family Vineyards
 street address: 6550 Roseland Farm, Crozet, VA 22932
