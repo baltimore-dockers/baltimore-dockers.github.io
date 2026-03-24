@@ -8,4 +8,3 @@ cost: 47
 ---
 
 Come join us in the bird bath as we cheer on the O's
-![pie-7a8005.jpg](/uploads/pie-7a8005.jpg)
