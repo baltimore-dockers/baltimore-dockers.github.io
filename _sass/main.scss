@@ -278,7 +278,6 @@ nav {
     justify-content: space-between;
     margin: 2em 6em;
 
-  
     .social-event {
       margin: 20px;
       padding: 10px;
@@ -395,6 +394,14 @@ nav {
             font-size: 5vw;
             margin: 2rem 0 0 0;
             text-align: center;
+        }
+
+        .no-events {
+            text-align: center;
+            
+            h2: {
+                font-size: 10vw;
+            }
         }
     
         .social-event {

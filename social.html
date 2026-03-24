@@ -6,7 +6,15 @@ title: Social
   <h1> 2026 SOCIAL EVENTS</h1>
 </div>
 <div class="social-container">
-  {% assign upcoming = site.social | where_exp: "event", "event.starts_at > now" %}
+  {% assign now_ts = 'now' | date: "%s" %}
+  {% assign upcoming = "" | split: "" %}
+  {% for event in site.social %}
+    {% assign event_ts = event.starts_at | date: "%s" %}
+    {% if event_ts > now_ts %}
+      {% assign upcoming = upcoming | push: event %}
+    {% endif %}
+  {% endfor %}
+  <!-- <p>{{upcoming.size}}</p> -->
   {% if upcoming.size == 0 %}
     <div class="no-events">
       <h2>Looks like there are no social events at the moment, check back later.</h2>
