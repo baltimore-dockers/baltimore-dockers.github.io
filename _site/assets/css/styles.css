@@ -110,55 +110,6 @@ nav a {
   font-size: 2rem;
 }
 
-@media screen and (max-width: 850px) {
-  h1 {
-    font-size: 12vw;
-  }
-  .header, .games-container {
-    width: 100%;
-  }
-  .games-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .games-container h1 {
-    font-size: 5vw;
-    margin: 2rem 0 0 0;
-    text-align: center;
-  }
-  .games-container .game {
-    width: 75%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    margin: 2rem;
-    padding: 0 2rem;
-    height: auto;
-    border-radius: 11px 11px 11px 11px;
-    box-shadow: 0px 6px 0px 10px rgba(0, 0, 0, 0.774);
-    background-color: rgb(255, 123, 0);
-  }
-  .games-container .game .game-date {
-    font-size: 6vw;
-  }
-  .games-container .game .game-address, .games-container .game .game-location-name, .games-container .game .game-time {
-    font-size: 4vw;
-    color: rgb(0, 0, 0);
-  }
-  .games-container .game div {
-    display: flex;
-    align-items: center;
-    color: rgb(255, 255, 255);
-  }
-  .games-container .game div h3 {
-    margin: 0 0 0 0;
-  }
-  .games-container .game div .name {
-    font-size: 8vw;
-  }
-}
 .contact-container {
   display: flex;
   flex-direction: column;
@@ -214,6 +165,8 @@ nav a {
   justify-content: center;
   flex-direction: column;
   position: relative;
+  object-fit: cover; /* KEY: fills the box without stretching */
+  object-position: center; /* change to "top" or "right" to control crop */
 }
 .hero div {
   text-align: center;
@@ -221,7 +174,7 @@ nav a {
 .hero .team-name {
   font-family: "Bebas Neue", Verdana, sans-serif;
   color: rgb(255, 255, 255);
-  font-size: 10em;
+  font-size: clamp(10em, 6vw, 5rem);
   text-align: center;
   transform: translateY(3rem);
 }
@@ -238,7 +191,7 @@ nav a {
   justify-content: space-between;
   margin: 2em 6em;
 }
-.news-container div {
+.news-container .news-item {
   flex: 1;
   margin: 20px;
   padding: 10px;
@@ -250,7 +203,7 @@ nav a {
   /*Important:*/
   position: relative;
 }
-.news-container div h1 {
+.news-container .news-item h1 {
   color: rgb(255, 255, 255);
   font-size: 3em;
   text-align: center;
@@ -268,6 +221,70 @@ nav a {
   background-image: url('empty.gif');*/
 }
 
+@media screen and (max-width: 850px) {
+  h1 {
+    font-size: 12vw;
+  }
+  .header, .games-container {
+    width: 100%;
+  }
+  .games-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .games-container h1 {
+    font-size: 5vw;
+    margin: 2rem 0 0 0;
+    text-align: center;
+  }
+  .games-container .game {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin: 2rem;
+    padding: 0 2rem;
+    height: auto;
+    border-radius: 11px 11px 11px 11px;
+    box-shadow: 0px 6px 0px 10px rgba(0, 0, 0, 0.774);
+    background-color: rgb(255, 123, 0);
+  }
+  .games-container .game .game-date {
+    font-size: 6vw;
+  }
+  .games-container .game .game-address, .games-container .game .game-location-name, .games-container .game .game-time {
+    font-size: 4vw;
+    color: rgb(0, 0, 0);
+  }
+  .games-container .game div {
+    display: flex;
+    align-items: center;
+    color: rgb(255, 255, 255);
+  }
+  .games-container .game div h3 {
+    margin: 0 0 0 0;
+  }
+  .games-container .game div .name {
+    font-size: 8vw;
+  }
+  .news-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .news-container .news-item {
+    width: 100%;
+    aspect-ratio: 1/0.2;
+  }
+  .news-container .team-name {
+    font-size: 6vw;
+  }
+  .news-container .tag-line {
+    font-size: 4vw;
+  }
+}
 @font-face {
   font-family: "Arial Black";
   src: url("../fonts/arial_black.ttf");
