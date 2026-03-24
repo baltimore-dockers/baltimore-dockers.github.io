@@ -13,7 +13,7 @@ collections:
     output: true
   social:
     title: Social Events
-    output: true
+    output: false
     date: date
   uploads:
     title: Uploads
@@ -28,8 +28,8 @@ defaults:
     type: social
   values:
     starts at: 
-    location name: 
-    street address: 
+    location name: M8 Brewing
+    street address: 1399 S Sharp St, Baltimore, MD 21230
     cost: 
 - scope:
     path: ''

@@ -137,8 +137,7 @@ nav {
             .name {
                 font-size: 2rem;
             }
-        }
-        
+        }        
     }
 }
 
@@ -251,8 +250,6 @@ nav {
       /*Important:*/
       position:relative;
 
-
-
       h1 { 
         color: $white;
         font-size: 3em;
@@ -272,6 +269,44 @@ nav {
     /* edit: fixes overlap error in IE7/8, 
        make sure you have an empty gif 
     background-image: url('empty.gif');*/
+}
+
+//social events
+.social-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2em 6em;
+
+  
+    .social-event {
+      margin: 20px;
+      padding: 10px;
+      background-color: $orange;
+      box-shadow: 0px 6px 0px 10px $trans-black;
+      border-radius: 11px 11px 11px 11px;
+    //   aspect-ratio: 1/1;
+      color:white;
+      /*Important:*/
+      position:relative;
+
+      div {
+        display: flex;
+        align-items: center;
+        color: $white;
+
+        h1 { 
+            color: $white;
+            font-size: 3rem;
+        }
+
+        h3 {
+            font-size: 1rem;
+            color: $black;
+            margin: 0 0 0 0;
+        }
+      } 
+    }   
 }
 
 @media screen and (max-width: 850px) {
@@ -348,6 +383,57 @@ nav {
     
         .tag-line {
             font-size: 4vw;
+        }
+    }
+
+    .social-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        h1 {
+            font-size: 5vw;
+            margin: 2rem 0 0 0;
+            text-align: center;
+        }
+    
+        .social-event {
+            width: 140%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            margin: 2rem;
+            padding: 0 2rem;
+            height: auto;
+            border-radius: 11px 11px 11px 11px;
+            box-shadow: 0px 6px 0px 10px $trans-black;
+            background-color: $orange;
+
+            .game-date {
+                font-size: 6vw;
+            }
+    
+            .game-address, .game-location-name, .game-time {
+                font-size: 4vw;
+                color: $black;
+            }
+            div {
+                display: flex;
+                align-items: center;
+                color: $white;
+
+                h1 {
+                    color: $white;
+                    font-size: 8vw;
+                }
+                
+                h3 {
+                    font-size: 4vw;
+                    color: $black;
+                    margin: 0 0 0 0;
+                }
+            }          
         }
     }
 }
