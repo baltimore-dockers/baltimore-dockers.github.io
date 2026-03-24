@@ -27,7 +27,7 @@ defaults:
     path: ''
     type: social
   values:
-    starts at: 
+    starts_at: 
     location name: M8 Brewing
     street address: 1399 S Sharp St, Baltimore, MD 21230
     cost: 
