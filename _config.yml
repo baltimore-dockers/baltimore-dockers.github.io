@@ -4,7 +4,7 @@ timezone: EST
 collections:
   faqs:
     title: FAQs
-    output: true
+    output: false
   games:
     title: Games
     output: false
@@ -40,3 +40,8 @@ defaults:
     is away game: false
     location name: Herring Run Park
     street address: 2254 Chesterfield Ave. Baltimore, MD 21213
+- scope:
+    path: ''
+    type: faqs
+  values:
+    question:
