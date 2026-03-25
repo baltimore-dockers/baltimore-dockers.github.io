@@ -44,4 +44,4 @@ defaults:
     path: ''
     type: faqs
   values:
-    question:
+    question: 
