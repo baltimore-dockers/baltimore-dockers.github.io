@@ -48,7 +48,7 @@ header {
         }
 
         .current {
-            color: rgb(255, 123, 0);
+            color: $orange;
             font-weight: bold;
         }
 
@@ -126,7 +126,7 @@ nav {
 }
 
 .current {
-    color: rgb(255, 123, 0);
+    color: $orange;
     font-weight: bold;
 }
 
@@ -164,8 +164,13 @@ nav {
 }
 
 //contact html
+
+input, textarea {
+    border-radius: 6px 6px 6px 6px;
+}
+
 .contact-container {
-    $width: 700px;
+    $width: clamp(1rem, 80vw, 50rem);
 
     display: flex;
     flex-direction: column;
@@ -201,6 +206,11 @@ nav {
             border-radius: 3px;
             font-size: 1rem;
             margin-left: 1.1rem;
+           }
+
+           &.submit:hover{
+            background-color: $orange;
+            border-color: $orange;
            }
         }
 

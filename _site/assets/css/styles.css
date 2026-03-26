@@ -130,6 +130,10 @@ nav a {
   font-size: 2rem;
 }
 
+input, textarea {
+  border-radius: 6px 6px 6px 6px;
+}
+
 .contact-container {
   display: flex;
   flex-direction: column;
@@ -137,11 +141,11 @@ nav a {
 }
 .contact-container .contact-instructions {
   text-align: center;
-  width: 700px;
+  width: clamp(1rem, 80vw, 50rem);
   color: rgb(255, 123, 0);
 }
 .contact-container .contact-form {
-  width: 700px;
+  width: clamp(1rem, 80vw, 50rem);
 }
 .contact-container .contact-form fieldset {
   display: flex;
@@ -163,6 +167,10 @@ nav a {
   border-radius: 3px;
   font-size: 1rem;
   margin-left: 1.1rem;
+}
+.contact-container .contact-form input.submit:hover {
+  background-color: rgb(255, 123, 0);
+  border-color: rgb(255, 123, 0);
 }
 .contact-container .contact-form textarea {
   margin: 0.5rem;
