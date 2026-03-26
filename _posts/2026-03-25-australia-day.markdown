@@ -1,5 +1,5 @@
 ---
-title: Australia Day
+title: Australia Day 2026
 date: 2026-03-25 23:06:00 -05:00
 ---
 
