@@ -46,7 +46,7 @@ header {
                 font-weight: bold;
             }
         }
-        
+
         .current {
             color: rgb(255, 123, 0);
             font-weight: bold;
@@ -58,7 +58,7 @@ header {
             align-items: flex-end;
             column-gap: 1.5rem;
             padding-bottom: 1rem;
-            
+
             div {
                 &.current{
                     border-bottom: solid $orange;
@@ -68,7 +68,7 @@ header {
                 }
             }
         }
-    } 
+    }
 }
 
 
@@ -82,6 +82,27 @@ h2 {
     font-family: 'Bebas Neue', display;
     font-size: 3rem;
     margin: 2rem 0 0 0;
+}
+
+a {
+  position: relative;
+  text-decoration: none;
+  color: $orange;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background: currentColor;
+    transition: width 0.3s ease;
+  }
+
+  &:hover::after {
+    width: 100%;
+  }
 }
 
 .page-title {
@@ -138,7 +159,7 @@ nav {
             .name {
                 font-size: 2rem;
             }
-        }        
+        }
     }
 }
 
@@ -167,7 +188,7 @@ nav {
         }
 
         input {
-           margin: .5rem; 
+           margin: .5rem;
            padding: .5rem;
            background-color: $light-grey;
            border-style: solid;
@@ -184,7 +205,7 @@ nav {
         }
 
         textarea {
-            margin: .5rem; 
+            margin: .5rem;
             padding: .5rem;
             background-color: $light-grey;
             color: $dark-grey;
@@ -193,7 +214,7 @@ nav {
     }
 }
 
-//index page 
+//index page
 .hero {
     height: 510px;
     width: 100%;
@@ -238,7 +259,7 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     margin: 2em 6em;
-  
+
     .news-item {
       flex: 1;
       margin: 20px;
@@ -251,7 +272,7 @@ nav {
       /*Important:*/
       position:relative;
 
-      h1 { 
+      h1 {
         color: $white;
         font-size: 3em;
         text-align: center;
@@ -260,15 +281,15 @@ nav {
 }
 
 .link-spanner{
-    position:absolute; 
+    position:absolute;
     width:100%;
     height:100%;
     top:0;
     left: 0;
     z-index: 1;
-  
-    /* edit: fixes overlap error in IE7/8, 
-       make sure you have an empty gif 
+
+    /* edit: fixes overlap error in IE7/8,
+       make sure you have an empty gif
     background-image: url('empty.gif');*/
 }
 
@@ -277,10 +298,10 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
     h2 {
         text-align: center;
-    }  
+    }
 }
 //  starting with FAQs make this uniform
 .card-container {
@@ -302,7 +323,7 @@ nav {
 .faq {
     background-color: $trans-black;
     div {
-        padding: 0rem 2rem 0rem 2rem;  
+        padding: 0rem 2rem 0rem 2rem;
     }
     h2 {
         margin: 1rem 0rem 1rem 0rem;
@@ -341,7 +362,7 @@ nav {
         align-items: center;
         color: $white;
 
-        h1 { 
+        h1 {
             color: $white;
             font-size: 3rem;
         }
@@ -351,8 +372,8 @@ nav {
             color: $black;
             margin: 0 0 0 0;
         }
-      } 
-    }   
+      }
+    }
 }
 
 @media screen and (max-width: 850px) {
@@ -360,7 +381,7 @@ nav {
     h1{
         font-size: 12vw;
     }
-    
+
     .header, .games-container {
         width: 100%;
     }
@@ -368,13 +389,13 @@ nav {
         display: flex;
         flex-direction: column;
         align-items: center;
-    
+
         h1 {
             font-size: 5vw;
             margin: 2rem 0 0 0;
             text-align: center;
         }
-    
+
         .game {
             width: 75%;
             display: flex;
@@ -391,7 +412,7 @@ nav {
             .game-date {
                 font-size: 6vw;
             }
-    
+
             .game-address, .game-location-name, .game-time {
                 font-size: 4vw;
                 color: $black;
@@ -400,7 +421,7 @@ nav {
                 display: flex;
                 align-items: center;
                 color: $white;
-                
+
                 h3 {
                     margin: 0 0 0 0;
                 }
@@ -409,7 +430,7 @@ nav {
                     font-size: 8vw;
                 }
             }
-            
+
         }
     }
 
@@ -426,7 +447,7 @@ nav {
         .team-name {
             font-size: 6vw;
         }
-    
+
         .tag-line {
             font-size: 4vw;
         }
@@ -437,18 +458,18 @@ nav {
         display: flex;
         justify-content: center;
         align-items: center;
-        
+
         h2 {
             text-align: center;
             font-size: 7vw;
-        }  
+        }
     }
 
     .social-container {
         display: flex;
         flex-direction: column;
         align-items: center;
-    
+
         h1 {
             font-size: 5vw;
             margin: 2rem 0 0 0;
@@ -457,12 +478,12 @@ nav {
 
         .no-events {
             text-align: center;
-            
+
             h2: {
                 font-size: 10vw;
             }
         }
-    
+
         .social-event {
             width: 140%;
             display: flex;
@@ -479,7 +500,7 @@ nav {
             .game-date {
                 font-size: 6vw;
             }
-    
+
             .game-address, .game-location-name, .game-time {
                 font-size: 4vw;
                 color: $black;
@@ -493,13 +514,13 @@ nav {
                     color: $white;
                     font-size: 8vw;
                 }
-                
+
                 h3 {
                     font-size: 4vw;
                     color: $black;
                     margin: 0 0 0 0;
                 }
-            }          
+            }
         }
     }
 }
