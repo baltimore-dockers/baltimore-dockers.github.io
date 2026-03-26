@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="/assets/css/styles.css">
+    <head>
+    <!-- standard favicon -->
+    <link rel="icon" type="image/x-icon" href="{{ '/assets/favicon.ico' | relative_url }}">
+      
+    <!-- modern browsers prefer PNG -->
+    <link rel="icon" type="image/png" href="{{ '/assets/favicon.png' | relative_url }}">
+      
+    <!-- apple devices -->
+    <link rel="apple-touch-icon" href="{{ '/assets/apple-touch-icon.png' | relative_url }}">
     {% seo %}
   </head>
   {% include header.html %}
