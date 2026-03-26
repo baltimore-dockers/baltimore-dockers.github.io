@@ -240,16 +240,17 @@ nav {
     .team-name {
         font-family: "Bebas Neue", Verdana, sans-serif;
         color: $white;
-        // font-size: 10em;
-        font-size: clamp(10em, 6vw, 5rem);
+        //font-size: 10em;
+        font-size: clamp(5rem, 12vw, 10em);
         text-align: center;
         transform: translateY(3rem);
+        overflow-wrap: break-word;
     }
 
     .tag-line {
         font-family: "Permanent Marker", Verdana, sans-serif;
         color: $trans-black;
-        font-size: 3em;
+        font-size: clamp(1rem, 6vw, 10em);
         left: center;
     }
 }
@@ -381,6 +382,14 @@ nav {
     h1{
         font-size: 12vw;
     }
+
+    .hero {
+        height: 300px;
+        .team-name {
+            transform: translateY(1rem);
+        }
+    }
+
 
     .header, .games-container {
         width: 100%;
