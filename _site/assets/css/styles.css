@@ -291,6 +291,11 @@ input, textarea {
   box-shadow: 0px 6px 0px 10px rgba(0, 0, 0, 0.774);
   border: 0px solid rgba(0, 0, 0, 0.774);
 }
+.card-container .card iframe, .card-container .card img {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 1em;
+}
 
 .faq {
   background-color: rgba(0, 0, 0, 0.774);
