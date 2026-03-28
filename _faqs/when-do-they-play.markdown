@@ -1,6 +1,5 @@
 ---
 title: who do we play against
-date: 2026-03-27 23:15:00 -05:00
 position: 1
 question: 'Who do the dockers compete against? '
 ---
