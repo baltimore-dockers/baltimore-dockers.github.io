@@ -44,12 +44,10 @@ defaults:
     path: ''
     type: faqs
   values:
-    question:
+    question: 
 plugins:
-  - jekyll-seo-tag
-  - jekyll-sitemap
-  - jekyll-redirect-from
-
-title: Baltimore Dockers
+- jekyll-seo-tag
+- jekyll-sitemap
+- jekyll-redirect-from
 description: Baltimore's Australian Rules Football Club
-url: "https://baltimoredockers.com"
+url: https://baltimoredockers.com
