@@ -1,6 +1,6 @@
 ---
 title: practice
-position: 4
+position: 3
 question: Where do the Dockers practice?
 ---
 
