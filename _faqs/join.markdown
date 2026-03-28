@@ -1,5 +1,5 @@
 ---
-title: join
+title: 3 Join
 position: 2
 question: How do I join the Baltimore Dockers?
 ---
