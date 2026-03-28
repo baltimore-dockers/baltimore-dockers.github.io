@@ -1,6 +1,5 @@
 ---
 title: Who are we
-date: 2026-03-27 23:11:00 -05:00
 position: 0
 question: Who are the Baltimore Dockers?
 ---
