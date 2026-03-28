@@ -1,6 +1,5 @@
 ---
 title: What is aussie rules
-date: 2026-03-27 23:26:00 -05:00
 question: What is Australian football?
 ---
 
