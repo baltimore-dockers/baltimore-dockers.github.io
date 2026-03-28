@@ -1,6 +1,6 @@
 ---
 title: 3 Who do we play against
-position: 1
+position: 3
 question: 'Who do the dockers compete against? '
 ---
 
