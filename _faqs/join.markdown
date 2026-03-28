@@ -1,7 +1,7 @@
 ---
 title: join
 date: 2026-03-25 18:36:00 -05:00
-position: 3
+position: 2
 question: How do I join the Baltimore Dockers?
 ---
 
