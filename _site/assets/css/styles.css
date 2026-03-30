@@ -296,8 +296,7 @@ input, textarea {
   margin: 0 auto;
   margin-bottom: 1em;
 }
-
-.video-container {
+.card-container .card .video-container {
   display: block;
   margin: 0 auto;
   margin-bottom: 1em;
@@ -306,8 +305,7 @@ input, textarea {
   max-width: 560px; /* caps it at original size on desktop */
   aspect-ratio: 16/9; /* maintains proportions as it shrinks */
 }
-
-.video-container iframe {
+.card-container .card .video-container iframe {
   position: absolute;
   top: 0;
   left: 0;
