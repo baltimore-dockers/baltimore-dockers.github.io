@@ -297,6 +297,7 @@ input, textarea {
   margin-bottom: 1em;
 }
 .card-container .card .video-container {
+  padding: 0;
   display: block;
   margin: 0 auto;
   margin-bottom: 1em;
