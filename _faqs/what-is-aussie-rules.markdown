@@ -8,12 +8,4 @@ Australian Rules Football, also known as “Aussie Rules” or “footy,” is a
 
 Imagine football where everyone is quarterback, linebacker, and kicker, all at the same time. Imagine basketball with hands and feet, or full-contact soccer, or high-flying rugby. But none of those things really explains our beautiful game. The video below shows what we do:
 
-<div class="video-container">
-  <iframe 
-    src="https://www.youtube.com/embed/XMZYZcoAcU0?si=hsSOUwC3fR6i04wY" 
-    title="YouTube video player" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-    referrerpolicy="strict-origin-when-cross-origin" 
-    allowfullscreen>
-  </iframe>
-</div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/XMZYZcoAcU0?si=Dh8vXfPTYZj81Cqu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
